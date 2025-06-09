@@ -169,7 +169,8 @@ const UploadBook = () => {
         required />
       </div>
 
-      <Button type="submit" className='mt-5'>Upload Book</Button>
+       <Button className="bg-cyan-700 text-white px-4 py-2 rounded-lg w-full flex justify-center items-center"type="submit">Submit</Button>
+
 
       
 

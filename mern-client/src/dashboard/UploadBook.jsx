@@ -36,13 +36,13 @@ const UploadBook = () => {
 
     const bookTitle = form.bookTitle.value;
     const authorName = form.authorName.value;
-    const imageURL = form.imageURL.value;
+    const imageUrl = form.imageUrl.value;
     const category = form.categoryName.value;
     const bookDescription = form.bookDescription.value;
     const bookPdfUrl = form.bookPdfUrl.value;
     
     const bookObj = {
-      bookTitle, authorName, imageURL, category, bookDescription, bookPdfUrl
+      bookTitle, authorName, imageUrl, category, bookDescription, bookPdfUrl
     }
 
     console.log(bookObj)
@@ -106,13 +106,13 @@ const UploadBook = () => {
         <div className='lg:w-1/2'>
         <div className="mb-2 block">
           <Label 
-          htmlFor="imageURL">Book Image URL</Label>
+          htmlFor="imageUrl">Book Image URL</Label>
         </div>
         <TextInput 
-        id="imageURL" 
-        name="imageURL"
+        id="imageUrl" 
+        name="imageUrl"
         type="text" 
-        placeholder="Book image URL" 
+        placeholder="Book image Url" 
         required />
       </div>
 
@@ -169,7 +169,7 @@ const UploadBook = () => {
         required />
       </div>
 
-       <Button className="bg-cyan-700 text-white px-4 py-2 rounded-lg w-full flex justify-center items-center"type="submit">Submit</Button>
+       <Button className="bg-cyan-700 text-white px-4 py-2 rounded-lg w-full flex justify-center items-center"type="submit">Upload Book</Button>
 
 
       
